@@ -1,0 +1,18 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <tab name="init" type="InitTab" active="false" scrollx="20" scrolly="20" scale="0.9"></tab>
+  <tab name="main" type="MainTab" active="true" scrollx="20" scrolly="20" scale="0.9">
+    <block xmlns="https://developers.google.com/blockly/xml" type="assignMaterial" id="rX5sM3yayI%6Y)T@ou}^" x="30" y="230">
+      <value name="VALUE2">
+        <shadow type="materialList" id="~7|6-))TjIF$h5IczwjK">
+          <field name="FIELDNAME">Blue_Cyclinder</field>
+        </shadow>
+      </value>
+      <value name="VALUE1">
+        <shadow type="objectList" id="ycA-2c69cJ_pQO(%R|qp">
+          <field name="FIELDNAME">Cube</field>
+        </shadow>
+      </value>
+    </block>
+  </tab>
+  <editorsettings viewport-x="750" viewport-y="28" viewport-w="512" viewport-h="346.5" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+</xml>

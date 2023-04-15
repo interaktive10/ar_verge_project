@@ -1,0 +1,144 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <tab name="init" type="InitTab" active="false" scrollx="15.000000000000227" scrolly="0" scale="0.9"></tab>
+  <tab name="main" type="MainTab" active="true" scrollx="72.57933248232075" scrolly="-225.5520394798022" scale="0.4744456655535406">
+    <block xmlns="https://developers.google.com/blockly/xml" type="addHTMLElement" id="Ki2GRZL)NEmEYj014c1u" x="-110" y="30">
+      <field name="ELEMENT">button</field>
+      <field name="MODE">TO</field>
+      <field name="PARENT">FALSE</field>
+      <value name="ID">
+        <shadow type="text" id="KFw.%Nhi=sm2rB:s_lpd">
+          <field name="TEXT">cube</field>
+        </shadow>
+      </value>
+      <value name="TARGET_ID">
+        <shadow type="DOMObjectSelector" id="2+gL2zCg[lrK$1v)V:0m">
+          <field name="DOM_OBJECT">BODY</field>
+        </shadow>
+      </value>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="addHTMLElement" id="7)!CvGd=-hQj`.!A[=@/" x="-110" y="110">
+      <field name="ELEMENT">button</field>
+      <field name="MODE">TO</field>
+      <field name="PARENT">FALSE</field>
+      <value name="ID">
+        <shadow type="text" id="oB2|f({hK,G*@]J+T:Dd">
+          <field name="TEXT">cylinder</field>
+        </shadow>
+      </value>
+      <value name="TARGET_ID">
+        <shadow type="DOMObjectSelector" id="RD)_OG5$|/SxC4OqIyoG">
+          <field name="DOM_OBJECT">BODY</field>
+        </shadow>
+      </value>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="hide" id="+QyPl]?TUTk52{!CJfkp" disabled="true" x="410" y="170">
+      <value name="VALUE">
+        <shadow type="objectList" id="E{@oSPj?:OwKJe:B6tz;">
+          <field name="FIELDNAME">Cube</field>
+        </shadow>
+      </value>
+      <next>
+        <block type="show" id="ipdv4?%_zkh_HmK]ZSm}" disabled="true">
+          <value name="VALUE">
+            <shadow type="objectList" id="L%+=Zh;@.Y/eCs6y}13)">
+              <field name="FIELDNAME">Cube</field>
+            </shadow>
+          </value>
+        </block>
+      </next>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="assignMaterial" id="rX5sM3yayI%6Y)T@ou}^" x="-110" y="210">
+      <value name="VALUE2">
+        <shadow type="materialList" id="~7|6-))TjIF$h5IczwjK">
+          <field name="FIELDNAME">Red_Cube</field>
+        </shadow>
+      </value>
+      <value name="VALUE1">
+        <shadow type="objectList" id="ycA-2c69cJ_pQO(%R|qp">
+          <field name="FIELDNAME">Cube</field>
+        </shadow>
+      </value>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="controls_if" id="n(31:{@O#d4Im~o({{T1" x="-170" y="270">
+      <value name="IF0">
+        <block type="featureAvailable" id=":@NamY-;P3dr4f}y8qpV">
+          <field name="FEATURE">MOBILE</field>
+        </block>
+      </value>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="checkARMode" id="h1Hr5lw`Fv.J}E,~`TzF" x="-90" y="350">
+      <statement name="DO_AVAIL">
+        <block type="enterARMode" id="fO|:h(@`yW7%:B?H1`GV">
+          <field name="REF_SPACE">ORIGIN</field>
+          <field name="ALLOW_HTML">TRUE</field>
+          <statement name="DO_ENTER">
+            <block type="arHitTest" id=".-ESQ@qC]t:N://Llw^/">
+              <value name="SMOOTH">
+                <shadow type="math_number" id="R|wV,k-J-yrFx`:4XP%U">
+                  <field name="NUM">0.7</field>
+                </shadow>
+              </value>
+              <statement name="DO_HIT">
+                <block type="execScript" id="T~m#KlUoF+PK4)DhvBD!">
+                  <value name="TEXT">
+                    <shadow type="textMultiline" id="gNJy|DayeBxN[G~,,yK;">
+                      <field name="HIGHLIGHT_MODE">javascript</field>
+                      <field name="TEXT" editor-height="10" editor-width="520">alert("AR surface detected");</field>
+                    </shadow>
+                  </value>
+                  <next>
+                    <block type="show" id="LKOk%^Hg3|DlXMi?E*lL" disabled="true">
+                      <value name="VALUE">
+                        <shadow type="objectList" id="-t7@5z#J__Z8z{s#1dI-">
+                          <field name="FIELDNAME">Cylinder</field>
+                        </shadow>
+                      </value>
+                    </block>
+                  </next>
+                </block>
+              </statement>
+            </block>
+          </statement>
+          <statement name="DO_EXIT">
+            <block type="execScript" id="mRCj7JKd}qg$n{,6,qJY">
+              <value name="TEXT">
+                <shadow type="textMultiline" id="s;h+X?k#cI[BB][P)(d{">
+                  <field name="HIGHLIGHT_MODE">javascript</field>
+                  <field name="TEXT" editor-height="10" editor-width="520">alert("Exiting AR");</field>
+                </shadow>
+              </value>
+            </block>
+          </statement>
+        </block>
+      </statement>
+      <statement name="DO_USDZ">
+        <block type="execScript" id="2a0qzNwYtKGVZ%zBRf;[">
+          <value name="TEXT">
+            <shadow type="textMultiline" id="UY$|Q-XNwgwUMBieb|sF">
+              <field name="HIGHLIGHT_MODE">javascript</field>
+              <field name="TEXT" editor-height="10" editor-width="520">alert("USDZ available");</field>
+            </shadow>
+          </value>
+        </block>
+      </statement>
+      <statement name="DO_UNAVAIL">
+        <block type="execScript" id="-ZI}.T=}a8.1UGE.%l,G">
+          <value name="TEXT">
+            <shadow type="textMultiline" id="G04p=PXU{N}C{dpbTg(w">
+              <field name="HIGHLIGHT_MODE">javascript</field>
+              <field name="TEXT" editor-height="10" editor-width="520">alert("AR unavailable");</field>
+            </shadow>
+          </value>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="hide" id="fYZ`c.G+;35y~(q8bzs-" disabled="true" x="910" y="1610">
+      <value name="VALUE">
+        <shadow type="objectList" id="G{?5@sK$K49^+xvfa{$y">
+          <field name="FIELDNAME">Cylinder</field>
+        </shadow>
+      </value>
+    </block>
+  </tab>
+  <editorsettings viewport-x="736.5768432617188" viewport-y="34.715484619140625" viewport-w="512" viewport-h="346.5" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+</xml>
