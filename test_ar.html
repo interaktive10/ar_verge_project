@@ -30,8 +30,8 @@
   <link rel="mask-icon" href="media/safari-pinned-tab.svg" color="#0048a5">
   <meta name="theme-color" content="#ffffff">
 
- 
-  
+
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
   <script src="v3d.js"></script>
   <script src="test_ar.js"></script>
 
@@ -39,7 +39,8 @@
 </head>
 
 <body>
- 
+  <model-viewer src="https://interaktive10.github.io/hosted-assets/Grinder.glb" alt="Your 3D model" ar ar-modes="webxr scene-viewer quick-look" auto-rotate camera-controls></model-viewer>
+
   <div id="v3d-container">
     <div id="fullscreen-button" class="fullscreen-button fullscreen-open" title="Toggle fullscreen mode"></div>
   </div>
